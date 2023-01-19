@@ -1,7 +1,7 @@
 #include<stdio.h>
 int main()
 {
-    int n; 
+    int n;
     scanf("%d",&n);
     if(n%3==0)
     printf("Pling");
