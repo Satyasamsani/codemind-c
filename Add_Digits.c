@@ -1,34 +1,18 @@
 #include<stdio.h>
 int main()
 {
-    int n,c=0,rem,s=0;
+    int n,r,s=0;
     scanf("%d",&n);
     while(n!=0)
     {
-        rem=n%10;
-        //printf("%d",n);
-        s=s+rem;
+        r=n%10;
+        s=s+r;
         n=n/10;
-        c+=1;
-        }
-        if(c==1)
-        printf("%d",s);
-        else
+        if(n==0&&s>9)
         {
-            while(c>1)
-            {
-                c=0;
-                n=s;
-                s=0;
-                while(n!=0)
-                {
-                    rem=n%10;
-                    //printf("%d",n);
-                    s=s+rem;
-                    n=n/10;
-                    c+=1;
-                    }
-                        }
-                        printf("%d",s);
-                        }
+            n=s;
+            s=0;
+        }
     }
+    printf("%d",s);
+}
