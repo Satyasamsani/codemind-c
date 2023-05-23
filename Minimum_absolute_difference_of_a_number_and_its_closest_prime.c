@@ -1,5 +1,6 @@
 #include<stdio.h>
 #include<math.h>
+#include<stdlib.h>
 int prime(int x)
 {
 	int i,c=0,mm=0;
@@ -80,4 +81,4 @@ else
 {
 	printf("0");
 }
-} 
+}
