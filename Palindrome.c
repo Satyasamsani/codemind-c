@@ -1,16 +1,16 @@
 #include<stdio.h>
 int main()
 {
-    int max,n,r,rev=0;
+    int n,r,v,m=0;
     scanf("%d",&n);
-    max=n;
+    v=n;
     while(n!=0)
     {
         r=n%10;
-        rev=rev*10+r;
+        m=m*10+r;
         n=n/10;
     }
-    if(max==rev)
+    if(v==m)
     {
         printf("True");
     }
@@ -18,5 +18,4 @@ int main()
     {
         printf("False");
     }
-    
 }
