@@ -1,14 +1,11 @@
 #include<stdio.h>
 int main()
 {
-    int x,y;
-    scanf("%d%d",&x,&y);
-    for(int i=1;i<=y;i++)
+    int n,r,i;
+    scanf("%d%d",&n,&r);
+    for(i=1;i<=r;i=i+2)
     {
-        if(i%2!=0)
-        {
-            printf("%d x %d = %d
-",x,i,x*i);
-        }
+        printf("%d x %d = %d
+",n,i,n*i);
     }
 }
