@@ -8,8 +8,8 @@ int main ( )
     {
         scanf ( "%d" , &a [ i ] ) ;
     }
-    int t = a [ 0 ] , c = 1 ;
-    for ( int i = 1 ; i < n ; i++ )
+    int t = a [ 0 ] , c = 0 ;
+    for ( int i = 0 ; i < n ; i++ )
     {
         if ( a [ i ] == t ) 
         {
@@ -39,6 +39,5 @@ int main ( )
             }
         }
         printf ( "%d" , p ) ;
-
 }
 }
